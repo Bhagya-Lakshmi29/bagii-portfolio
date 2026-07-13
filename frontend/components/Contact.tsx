@@ -12,7 +12,8 @@ export default function Contact() {
     setStatus('loading');
     
     try {
-      const res = await fetch('http://localhost:5001/api/contact', {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5001';
+      const res = await fetch(`${apiUrl}/api/contact`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
@@ -53,7 +54,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-3xl font-bold mb-6 text-white">Let's Talk!</h3>
+            <h3 className="text-3xl font-bold mb-6 text-white">Let&apos;s Talk!</h3>
             <p className="text-gray-400 mb-8 text-lg">
               Feel free to reach out for collaborations, opportunities, or just a friendly chat.
             </p>

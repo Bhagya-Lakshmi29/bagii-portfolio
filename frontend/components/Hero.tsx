@@ -27,7 +27,7 @@ export default function Hero() {
               className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-4"
             >
               Hi 👋 <br/>
-              I'm <span className="gradient-text">Bhagya Lakshmi</span>
+              I&apos;m <span className="gradient-text">Bhagya Lakshmi</span>
             </motion.h1>
             
             <div className="h-12 mb-6">

@@ -29,7 +29,16 @@ const projects = [
   }
 ];
 
-function ProjectCard({ project, index }: { project: any, index: number }) {
+interface Project {
+  title: string;
+  description: string;
+  tech: string[];
+  github: string;
+  live?: string;
+  color: string;
+}
+
+function ProjectCard({ project, index }: { project: Project, index: number }) {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 

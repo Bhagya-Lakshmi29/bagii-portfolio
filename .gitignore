@@ -1,0 +1,14 @@
+# Root — ignore both workspaces
+node_modules/
+.env
+.env.local
+*.log
+npm-debug.log*
+
+# Next.js build output
+frontend/.next/
+frontend/out/
+
+# OS files
+.DS_Store
+Thumbs.db
